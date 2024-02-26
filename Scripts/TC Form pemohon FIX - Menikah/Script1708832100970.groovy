@@ -42,8 +42,8 @@ for (int baris = 1; baris <= Hohendy.getRowNumbers(); baris++)
 		Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 		
 		'Beda HP beda posisi button tab'
-		//Mobile.tapAtPosition(435, 891, FailureHandling.STOP_ON_FAILURE)
-		Mobile.tapAtPosition(626, 1200, FailureHandling.STOP_ON_FAILURE)
+		Mobile.tapAtPosition(435, 891, FailureHandling.STOP_ON_FAILURE)
+		//Mobile.tapAtPosition(626, 1200, FailureHandling.STOP_ON_FAILURE)
 		
 		
 		Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
@@ -57,14 +57,14 @@ for (int baris = 1; baris <= Hohendy.getRowNumbers(); baris++)
 		Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 		
 		'beda hp beda kondisi lokasi'
-		//Mobile.tap(findTestObject('Form data Pemohon/Button Foto after select kamera/Button Foto (J2Prime samsung)'), 0, FailureHandling.STOP_ON_FAILURE)
-		Mobile.tapAtPosition(351, 1364, FailureHandling.CONTINUE_ON_FAILURE)
+		Mobile.tap(findTestObject('Form data Pemohon/Button Foto after select kamera/Button Foto (J2Prime samsung)'), 0, FailureHandling.STOP_ON_FAILURE)
+		//Mobile.tapAtPosition(351, 1364, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 		
 		'beda hp beda kondisi lokasi\r\n'
-		//Mobile.tap(findTestObject('Form data Pemohon/Button Foto after select kamera/Button OK (J2Prime samsung)'), 0, FailureHandling.STOP_ON_FAILURE)
-		Mobile.tap(findTestObject('Object Repository/Form data Pemohon/Button Foto after select kamera/Button OK samsung A22'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+		Mobile.tap(findTestObject('Form data Pemohon/Button Foto after select kamera/Button OK (J2Prime samsung)'), 0, FailureHandling.STOP_ON_FAILURE)
+		//Mobile.tap(findTestObject('Object Repository/Form data Pemohon/Button Foto after select kamera/Button OK samsung A22'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 		
 		Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 	

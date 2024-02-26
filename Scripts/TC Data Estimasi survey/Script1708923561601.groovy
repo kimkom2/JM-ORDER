@@ -29,8 +29,20 @@ for (int baris = 1; baris <= Hohendy.getRowNumbers(); baris++)
 			Mobile.sendKeys(findTestObject('Object Repository/Survey/Tanggal Survey'), Hohendy.getValue('Tanggal Survey', baris), FailureHandling.STOP_ON_FAILURE)
 			
 			Mobile.sendKeys(findTestObject('Object Repository/Survey/Jam Survey'), Hohendy.getValue('Jam Survey', baris), FailureHandling.STOP_ON_FAILURE)
-				
+			
+			if (Hohendy.getValue('Pekerjaan', baris)== 'Wiraswasta')
+				{
+					Mobile.sendKeys(findTestObject('Object Repository/Survey/Tanggal Survey Tempat Usaha'), Hohendy.getValue('Tanggal Survey usaha', baris), FailureHandling.STOP_ON_FAILURE)
+			
+					Mobile.sendKeys(findTestObject('Object Repository/Survey/Jam Survey Tempat Usaha'), Hohendy.getValue('Jam Survey Tmpt usaha', baris), FailureHandling.STOP_ON_FAILURE)
+					
+					Mobile.hideKeyboard()
+				}
+			Mobile.delay(2, FailureHandling.OPTIONAL)
+						
 			Mobile.tap(findTestObject('Object Repository/Data Pengajuan/Button - Selanjutnya'), 0, FailureHandling.OPTIONAL)
+			
+			Mobile.delay(2, FailureHandling.OPTIONAL)
 			
 			Mobile.tap(findTestObject('Object Repository/Survey/Button - Sumbit Form'), 0, FailureHandling.OPTIONAL)
 			

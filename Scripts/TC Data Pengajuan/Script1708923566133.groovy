@@ -46,6 +46,18 @@ for (int baris = 1; baris <= Hohendy.getRowNumbers(); baris++)
 			
 			Mobile.hideKeyboard()
 			
+			if (
+				Hohendy.getValue('Product', baris)== 'Dahsyat - Multipurpose 4W'||
+				Hohendy.getValue('Product', baris)== 'Dahsyat - Multipurpose 2W'
+			   )
+				{
+					Mobile.tap(findTestObject('Object Repository/Data Pengajuan/Spinner Jaminan BPKB'), 0, FailureHandling.OPTIONAL)
+					
+					Mobile.tap(findTestObject('Object Repository/Data Pengajuan/Jaminan BPKB/BPKB ' + Hohendy.getValue('BPKB Atas nama', baris)), 0, FailureHandling.OPTIONAL)
+					
+					Mobile.hideKeyboard()
+				}
+			
 			Mobile.tap(findTestObject('Object Repository/Data Pengajuan/Spinner Source of application'), 0, FailureHandling.OPTIONAL)
 			
 			Mobile.delay(2, FailureHandling.OPTIONAL)
